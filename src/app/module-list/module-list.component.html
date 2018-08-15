@@ -1,0 +1,8 @@
+
+
+  <input [(ngModel)]="searchText"/>
+
+  <ul>
+    <li *ngFor="let item of moduleList | filter:searchText">{{item.name}}</li>
+  </ul>
+
